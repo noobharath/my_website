@@ -27,7 +27,7 @@ export default function Portfolio() {
             <p>
                 It's an  E-commerce website [unfinished]
             </p>
-            <a href='http://nerdpath.ml/' className='course_link'>Check it Out➜</a>
+            <a href='https://ecomm-stripe-beta.vercel.app/' className='course_link'>Check it Out➜</a>
         </div>
     </div>
     </div>
