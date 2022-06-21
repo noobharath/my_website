@@ -1,0 +1,56 @@
+.Skills{
+    background-color: rgb(10, 10, 10);
+    height: fit-content;
+}
+.skills_experience{
+    padding-top: 3%;
+    padding-left: 2.5%;
+    font-size: xx-large;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+.skill_box{
+    background-color: rgb(10, 10, 10);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.skill_individual_box:hover{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.skill_individual_box:not( :hover ){
+    transition: .5s;
+}
+.skill_box img{
+    width: 98%;
+    margin-top: 2px;
+    height: 85%;
+}
+.skill_box div{
+    border: 1px solid red;
+    width: 20%;
+    height: 50vh;
+    text-align: center;
+    margin: 30px;
+}
+@media screen and (max-width: 870px) {
+    .skill_box div{
+        height: 20vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    .skill_box div{
+        height: 25vh;
+        width: 33vw;
+    }
+    .skill_box div h2{
+        font-size: larger;
+    }
+    .skill_box img{
+        height: 80%;
+    }
+}

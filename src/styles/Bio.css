@@ -1,0 +1,68 @@
+.Bio{
+    height: 80vh;
+}
+.Bio div{
+    display: flex;
+    margin-top: 5%;
+    justify-content: center;
+}
+.Bio p{
+    border: 1px solid red;
+    padding: 10px;
+    box-shadow: inset 4px 4px 4px red;
+    width: 30%;
+    font-size: 20px;
+}
+.BioTitle{
+    font-size: 30px;
+    margin-top: 6%;
+    margin-left: 10%;
+}
+.BioTitle {
+    display:inline-block;
+    overflow:hidden;
+    white-space:nowrap;
+  }
+  
+  .BioTitle:first-of-type {  
+    animation: showup 7s infinite;
+  }
+  
+  .BioTitle:last-of-type {
+    width:0px;
+    animation: reveal 7s infinite;
+  }
+  
+  .BioTitleiv:last-of-type span {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+  }
+  
+  @keyframes showup {
+      0% {opacity:0;}
+      20% {opacity:1;}
+      80% {opacity:1;}
+      100% {opacity:0;}
+  }
+  
+  @keyframes slidein {
+      0% { margin-left:-800px; }
+      20% { margin-left:-800px; }
+      35% { margin-left:0px; }
+      100% { margin-left:0px; }
+  }
+  
+  @keyframes reveal {
+      0% {opacity:0;width:0px;}
+      20% {opacity:1;width:0px;}
+      30% {width:355px;}
+      80% {opacity:1;}
+      100% {opacity:0;width:205px;}
+  }
+@media screen and (max-width: 600px){
+    .Bio p{
+        margin-top: 14%;
+        font-size: 15px;
+        width: 50%;
+    }
+}

@@ -1,0 +1,48 @@
+.footer{
+    height: 60vh;
+    background-image: url('../images/wave.png');
+    /* text-align: center; */
+}
+.footer h2{
+    display: flex;
+    margin: 3% 5%;
+}
+.footer h2 p{
+    color: red;
+    margin-left: 5px;
+}
+.footer_links{
+    margin-left: 5%;
+}
+.footer_links a{
+    padding: 5px;
+}
+.footer_mail{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 5%;
+    left: 5.5%;
+    color: yellow;
+}
+.footer_mail:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid rgb(255, 0, 0);
+    transition: 0.4s;
+}
+.footer_mail:hover::after {
+    width: 100%;
+}
+.landing_link{
+    margin-left: 80%;
+}
+@media screen and (max-width: 600px){
+    .landing_link{
+        font-size: 10px;
+        width: fit-content;
+        margin-left: 40%;
+    }
+}

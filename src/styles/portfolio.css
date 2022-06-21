@@ -1,0 +1,76 @@
+.Portfolio{
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    place-items: center;
+}
+.nerdPath{
+    text-align: center;
+    width: 50%;
+    height: 90%;
+    border: 1px solid red;
+}
+.nerdPath p{
+    margin-top: 25%;
+}
+.nerdPath h2{
+    margin-top: 10%;
+}
+.Ecomm{
+    border: 1px solid red;
+    width: 95%;
+    height: 40%;
+    text-align: center;
+}
+.Ecomm  h2{
+    margin-top: 3%;
+}
+.Ecomm p{
+    margin-top: 5%;
+}
+.heading{
+    background-image: -webkit-linear-gradient(right, red , yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 5% 5%;
+    font-size: 40px;
+}
+.course_link{
+    text-decoration: none;
+    position: absolute;
+    margin-top: 3%;
+    color: yellow;
+}
+.course_link:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    border-bottom: 2px solid rgb(255, 0, 0);
+    transition: 0.4s;
+}
+.course_link:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 600px){
+    .Portfolio{
+        grid-template-columns: auto;
+    }
+    .main{
+        /* margin-top: 100%; */
+        height: 110vh;
+    }
+    .course_link{
+       position: absolute;
+       left: 37%;
+    }
+    .Ecomm{
+        height: 30vh;
+        width: 80%;
+    }
+}

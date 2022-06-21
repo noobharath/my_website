@@ -1,0 +1,54 @@
+.social{
+  padding: 5% 5%;
+  background-color: rgb(10, 10, 10);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 47px;
+  grid-row-gap: 28px;
+  height: 80vh;
+}
+.box{
+  background: transparent;
+  border-radius: 10%;
+  box-shadow: 22px 15px 102px -29px rgba(255,0,0,0.55);
+  -webkit-box-shadow: 22px 15px 102px -29px rgba(255,0,0,0.55);
+  -moz-box-shadow: 22px 15px 102px -29px rgba(255,0,0,0.55);
+}
+.box a{
+  background: transparent;
+}
+.box a img{
+  background: transparent;
+  margin-top: 20%;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  /* margin-left: 5%; */
+}
+.socialHeading{
+  background-color: rgb(11, 11, 11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.socialHeading h2{
+  width: fit-content;
+  margin-top: 5%;
+  padding: 0px 10px;
+  text-align: center;
+  background-color: rgb(11, 11, 11);
+  border-left: 3px solid red;
+  border-right: 3px solid red;
+}
+@media screen and (max-width: 600px){
+  .social{
+    grid-template-columns: 1.5fr;
+    place-items: center;
+    height: 120vh;
+  }
+  .box{
+    width: 60%;
+  }
+}

@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 3%;
+    height: 7vh;
+    align-items: center;
+    border-bottom: 1px solid rgb(252, 252, 252);
+}
+.navBar-link{
+    text-decoration: none;
+    color: white;
+    font-size: xx-large;
+    font-family: 'Comfortaa', cursive;
+}
+@media screen and (max-width: 600px){
+    .btn-2{
+        /* display: none;    */
+    }
+}
